@@ -1,10 +1,9 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require 'SocketIO'
 
 Gem::Specification.new do |s|
   s.name        = "socketio-client"
-  s.version     = SocketIO::Client::VERSION
+  s.version     = "0.0.2"
   s.authors     = ["Lyon"]
   s.email       = ["lyon@delorum.com"]
   s.homepage    = "http://github.com/lyondhill/socket.io-ruby-client"
@@ -21,4 +20,5 @@ Gem::Specification.new do |s|
   # specify any dependencies here; for example:
   # s.add_development_dependency "rspec"
   s.add_runtime_dependency "rest-client"
+  s.add_dependency "json"
 end
